@@ -4,7 +4,7 @@ import { Container, Wrapper } from "../../layout";
 import { Content } from "./style";
 import TitleSection from "../../Sections/TitleSection";
 import bg from "../../../images/about_us_bg.jpg";
-import BlockLeft from "./BlockLeft";
+import Swiper from "../../Sections/Swiper";
 import BlockRight from "./BlockRight";
 
 const index = () => {
@@ -26,7 +26,7 @@ const index = () => {
           colorWhite
         />
         <Content>
-          <BlockLeft />
+          <Swiper />
           <BlockRight />
         </Content>
       </Wrapper>

@@ -3,20 +3,13 @@ import styled from "styled-components";
 export const BlockItemStyle = styled.div`
   border: 1px solid #cccccc;
   padding: 20px;
-  margin: 57px 15px 0px;
+  margin: 57px 15px;
   position: relative;
   background: #fff;
   transition: all 0.5s;
   flex: 1 1 35%;
   margin-bottom: 40px;
-
-  &:nth-child(2n-1) {
-    margin-left: 0;
-  }
-
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -79,7 +72,8 @@ export const BlockItemStyle = styled.div`
     .icon-wrapper {
       background: #ddbb00;
       border: 1px solid transparent;
-      transition: all 0.5s;
+      transition: all 0.9s;
+      transform: rotateY(180deg) rotate(0deg);
       .icon {
         color: #fff;
       }

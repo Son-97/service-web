@@ -39,6 +39,15 @@ export const Content = styled.div`
   .right {
     max-width: 66.66666667%;
     margin-left: 15px;
+    .block-item {
+      &:nth-child(2n-1) {
+        margin-left: 0;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
   }
   @media screen and (max-width: 800px) {
     flex-direction: column;

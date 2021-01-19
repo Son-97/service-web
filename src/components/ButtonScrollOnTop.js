@@ -21,7 +21,7 @@ const ButtonScrollOnTop = styled(({ className }) => {
   width: 40px;
   height: 40px;
   position: fixed;
-  bottom: 15px;
+  bottom: 8px;
   right: 20px;
   border-radius: 5px;
   border: none;

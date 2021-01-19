@@ -3,9 +3,9 @@ import React from "react";
 import { Title, SupText } from "../layout";
 
 const index = (props) => {
-  const { title, supTitle } = props;
+  const { title, supTitle, className } = props;
   return (
-    <div className="pb-12">
+    <div className={`${(className && className) || "pb-12"} `}>
       <Title {...props}>
         <span>{title}</span>
       </Title>

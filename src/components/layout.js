@@ -9,6 +9,8 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 1150px;
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: ${(props) =>
     props.isBackgroundWhite ? "white" : "transparent"};
   padding-top: 80px;

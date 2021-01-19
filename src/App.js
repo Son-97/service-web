@@ -4,6 +4,7 @@ import ButtonScrollOnTop from "./components/ButtonScrollOnTop";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Services from "./pages/Service";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/service" exact component={Services} />
       </Switch>
       <Footer />
       <ButtonScrollOnTop />

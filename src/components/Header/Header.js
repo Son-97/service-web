@@ -23,35 +23,24 @@ const Header = () => {
               <Icon>
                 <MdEmail size="23" />
               </Icon>
-              {/* <p>son.lequang97@gmail.com</p> */}
             </Row>
-            {/* <Line /> */}
+
             <Row>
               <Row>
                 <Icon>
                   <MdPhone size="23" />
                 </Icon>
-                {/* <div>
-                <p>0941.386.676</p>
-                <p>0347.366.345</p>
-                <p>0986.223.390</p>
-              </div> */}
               </Row>
             </Row>
-            {/* <Line /> */}
+
             <Row>
               <Row>
                 <Icon>
                   <MdLocationOn size="23" />
                 </Icon>
-                {/* <div>
-                <p>CN1: Xã Hạ Trạch - Bố Trạch - Quảng Bình</p>
-                <p>CN2: Phường Tân Đông Hiệp - Dĩ An - Bình Dương</p>
-                <p>CN3: Phường Linh Chiểu - Thủ Đức - TP.HCM</p>
-              </div> */}
               </Row>
             </Row>
-            {/* <Line /> */}
+
             <a
               target="_blank"
               rel="noopener noreferrer"

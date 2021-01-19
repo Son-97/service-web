@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Container, Wrapper } from "../layout";
 import { Content, Line } from "./style";
@@ -7,20 +8,25 @@ import FooterWrapper from "./FooterWrapper";
 
 const Footer = () => {
   return (
-    <Container
-      className="text-center w-full h-full"
-      style={{
-        backgroundColor: "#181818",
-      }}
-    >
-      <Wrapper>
-        <Content>
-          <ContactFooter />
-          <Line />
-          <FooterWrapper />
-        </Content>
-      </Wrapper>
-    </Container>
+    <React.Fragment>
+      <Container className="text-center w-full h-full bg-black-3">
+        <Wrapper>
+          <Content>
+            <ContactFooter />
+            <Line />
+            <FooterWrapper />
+          </Content>
+        </Wrapper>
+        <div className="bg-black-4 text-gray-1 py-4">
+          Copyright 2018{" "}
+          <Link to="/" className="text-yellow-1">
+            Dietmoi.com
+          </Link>{" "}
+          . All Right Reserved - Design By{" "}
+          <span className="text-yellow-1">DietMoiQuangDuong</span>
+        </div>
+      </Container>
+    </React.Fragment>
   );
 };
 
