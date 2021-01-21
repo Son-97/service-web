@@ -5,6 +5,8 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Service";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/service" exact component={Services} />
+        <Route path="/blog" exact component={Blog} />
+        <Route path="/contact-us" exact component={Contact} />
       </Switch>
       <Footer />
       <ButtonScrollOnTop />
