@@ -12,7 +12,7 @@ const index = () => {
     <Container isBackgroundWhite>
       <Wrapper>
         <TitleSection
-          title="Our Services"
+          title="Dịch vụ của chúng tôi"
           supTitle=" Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
             ipsum,sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
             a sit amet mauris. Morbi accumsan ipsum velit"

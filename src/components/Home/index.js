@@ -45,14 +45,12 @@ const Home = () => {
               <div className="absolute w-full h-full bg-black-2"></div>
               <img src={item} alt="bg" className="backgound-img" />
               <SwiperDescription>
-                <p className="text pb-4">
-                  Keep your home <span>bug free</span>
+                <p className="text pb-4">Dịch vụ diệt mối tận gốc</p>
+                <p className="description text-red-600 text-2xl leading-loose">
+                  Chất lượng - Uy tín - Hiệu quả
                 </p>
-                <p className="description text-yellow-600 text-2xl leading-loose">
-                  Keep your home bug free
-                </p>
-                <p className="description text-2xl text-red-600">
-                  Keep your home bug free
+                <p className="description text-yellow-600 text-2xl font-black">
+                  Hotline: 0347366345
                 </p>
               </SwiperDescription>
             </div>

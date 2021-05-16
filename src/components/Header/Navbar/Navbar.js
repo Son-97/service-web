@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaCalendarAlt } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import {
   NavbarContainer,
   MobileIcon,
   NavMenu,
   NavItem,
   NavLinks,
-  Button,
 } from "./Navbar.elements";
 import Logo from "../../../images/logo_dark.png";
 
@@ -39,7 +38,7 @@ function Navbar() {
               onClick={closeMobileMenu}
               activeClassName="active"
             >
-              Home
+              Trang chủ
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -48,7 +47,7 @@ function Navbar() {
               onClick={closeMobileMenu}
               activeClassName="active"
             >
-              About Us
+              Về chúng tôi
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -57,7 +56,7 @@ function Navbar() {
               onClick={closeMobileMenu}
               activeClassName="active"
             >
-              Service
+              Dịch vụ
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -66,7 +65,7 @@ function Navbar() {
               onClick={closeMobileMenu}
               activeClassName="active"
             >
-              Our Work
+              Sản phẩm
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -75,7 +74,7 @@ function Navbar() {
               onClick={closeMobileMenu}
               activeClassName="active"
             >
-              Blog
+              Tin tức
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -84,14 +83,11 @@ function Navbar() {
               onClick={closeMobileMenu}
               activeClassName="active"
             >
-              Contact Us
+              Liên hệ
             </NavLinks>
           </NavItem>
         </NavMenu>
-        <Button href="#form">
-          <FaCalendarAlt className="mr-4" />
-          <p>Appointment</p>
-        </Button>
+
         <div className="logo-navbar hidden">
           <img src={Logo} alt="logo" />
         </div>

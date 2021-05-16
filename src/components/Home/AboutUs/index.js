@@ -19,7 +19,7 @@ const index = () => {
       />
       <Wrapper>
         <TitleSection
-          title="About Us"
+          title="Về chúng tôi"
           supTitle=" Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
             ipsum,sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
             a sit amet mauris. Morbi accumsan ipsum velit"

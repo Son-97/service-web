@@ -140,5 +140,13 @@ export const ContactStyled = styled.div`
         margin-left: 0;
       }
     }
+    @media screen and (max-width: 550px) {
+      .send-message {
+        padding: 28px;
+      }
+      .time-work {
+        padding: 30px 28px;
+      }
+    }
   }
 `;

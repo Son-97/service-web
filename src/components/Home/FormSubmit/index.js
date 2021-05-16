@@ -1,6 +1,7 @@
 import React from "react";
 import { FaUserAlt, FaPhone } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
+import { FiSend } from "react-icons/fi";
 import { useForm } from "react-hook-form";
 
 import { FormStyle, ButtonSubmit } from "./styles";
@@ -74,8 +75,11 @@ const FormSubmit = () => {
         />
       </Row>
       <ButtonSubmit type="submit" className="mx-4 my-2">
-        <div className="btn-front">submit</div>
-        <div className="btn-back">submit</div>
+        <div className="btn-front">Gửi ngay</div>
+        <div className="btn-back flex items-center justify-center">
+          <FiSend className="mr-1" />
+          Gửi ngay
+        </div>
       </ButtonSubmit>
     </FormStyle>
   );

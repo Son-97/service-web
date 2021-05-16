@@ -12,7 +12,7 @@ const index = () => {
     <Container className="text-center ">
       <Wrapper isBackgroundWhite>
         <TitleSection
-          title="Why choose Us"
+          title="Tại sao chọn chúng tôi"
           supTitle=" Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
             ipsum,sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
             a sit amet mauris. Morbi accumsan ipsum velit"
@@ -23,7 +23,7 @@ const index = () => {
               <img src={whoWeImage} alt="who_we_image" />
             </div>
             <div className="txt_wrapper">
-              <h2> Who We Are</h2>
+              <h2>Chúng tôi là ai</h2>
               <SupText className="text-left">
                 Proin gravida nibh vel velit auctor aliquet. ean sollicitudin,
                 lorem quis bibendu ipsum, nec sagittis sem nibh Duis sed odio
