@@ -17,7 +17,7 @@ const Footer = () => {
             <FooterWrapper />
           </Content>
         </Wrapper>
-        <div className="bg-black-4 text-gray-1 py-4">
+        <div className="bg-black-4 text-gray-1 p-4">
           Copyright 2018{" "}
           <Link to="/" className="text-yellow-1">
             Dietmoi.com

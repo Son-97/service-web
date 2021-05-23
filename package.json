@@ -16,6 +16,7 @@
     "react-hook-form": "^6.9.2",
     "react-icons": "^3.11.0",
     "react-id-swiper": "^4.0.0",
+    "react-render-html": "^0.6.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-visibility-sensor": "^5.1.1",

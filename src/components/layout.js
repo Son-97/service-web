@@ -38,7 +38,7 @@ export const Title = styled.h2`
   position: relative;
   text-transform: capitalize;
   display: inline-block;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   ::before {
     content: "";
     border: 1px solid #ddbb00;
@@ -72,6 +72,9 @@ export const Title = styled.h2`
       right: -20px;
       top: 16px;
     }
+  }
+  @media screen and (max-width: 540px) {
+    font-size: 26px;
   }
 `;
 

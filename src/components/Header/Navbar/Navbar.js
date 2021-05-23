@@ -6,26 +6,27 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  BackgroundMobile,
 } from "./Navbar.elements";
 import Logo from "../../../images/logo_dark.png";
 
 function Navbar() {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
-  const handleClick = () => setIsOpenMobileMenu(!isOpenMobileMenu);
+  const handleToggleMenu = () => setIsOpenMobileMenu(!isOpenMobileMenu);
   const closeMobileMenu = () => setIsOpenMobileMenu(false);
 
   document.body.addEventListener("click", () => {
-    setIsOpenMobileMenu(false);
+    closeMobileMenu();
   });
 
   return (
     <React.Fragment>
       <NavbarContainer className="header">
-        <MobileIcon onClick={handleClick}>
+        <MobileIcon onClick={handleToggleMenu}>
           {isOpenMobileMenu ? <FaTimes /> : <FaBars />}
         </MobileIcon>
-        <NavMenu onClick={handleClick} click={isOpenMobileMenu}>
+        <NavMenu onClick={handleToggleMenu} click={isOpenMobileMenu}>
           <NavItem>
             <div className="bg-yellow-1 justify-center py-1 hidden logo-mobile">
               <img src={Logo} alt="logo" />
@@ -61,7 +62,7 @@ function Navbar() {
           </NavItem>
           <NavItem>
             <NavLinks
-              to="/our-work"
+              to="/products"
               onClick={closeMobileMenu}
               activeClassName="active"
             >
@@ -92,6 +93,7 @@ function Navbar() {
           <img src={Logo} alt="logo" />
         </div>
       </NavbarContainer>
+      <BackgroundMobile isOpenMobileMenu={isOpenMobileMenu} />
     </React.Fragment>
   );
 }

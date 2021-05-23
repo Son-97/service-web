@@ -9,52 +9,57 @@ import Logo from "../../images/logo_dark.png";
 import Navbar from "./Navbar/Navbar";
 import { Icon } from "../ui/Icon";
 
-const Header = () => {
+const HeaderInfo = () => {
   return (
-    <React.Fragment>
-      <Container>
-        <div className="bg-yellow-1 w-1 bg-yellow" />
-        <div className="absolute flex items-center justify-center w-full justify-between top-header">
-          <Link to="/" className="logo">
-            <img src={Logo} alt="logo" />
-          </Link>
+    <Container>
+      <div className="bg-yellow-1 w-1 bg-yellow" />
+      <div className="absolute flex items-center justify-center w-full justify-between top-header">
+        <Link to="/" className="logo">
+          <img src={Logo} alt="logo" />
+        </Link>
+        <Row>
+          <Row>
+            <Icon>
+              <MdEmail size="23" />
+            </Icon>
+          </Row>
+
           <Row>
             <Row>
               <Icon>
-                <MdEmail size="23" />
+                <MdPhone size="23" />
               </Icon>
             </Row>
-
-            <Row>
-              <Row>
-                <Icon>
-                  <MdPhone size="23" />
-                </Icon>
-              </Row>
-            </Row>
-
-            <Row>
-              <Row>
-                <Icon>
-                  <MdLocationOn size="23" />
-                </Icon>
-              </Row>
-            </Row>
-
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/dichvudietmoiQuangDuong"
-              title="https://www.facebook.com/dichvudietmoiQuangDuong"
-            >
-              <Icon className="contact-icon">
-                <FaFacebookF size="23" />
-              </Icon>
-            </a>
           </Row>
-        </div>
-      </Container>
 
+          <Row>
+            <Row>
+              <Icon>
+                <MdLocationOn size="23" />
+              </Icon>
+            </Row>
+          </Row>
+
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/dichvudietmoiQuangDuong"
+            title="https://www.facebook.com/dichvudietmoiQuangDuong"
+          >
+            <Icon className="contact-icon">
+              <FaFacebookF size="23" />
+            </Icon>
+          </a>
+        </Row>
+      </div>
+    </Container>
+  );
+};
+
+const Header = () => {
+  return (
+    <React.Fragment>
+      <HeaderInfo />
       <Navbar />
     </React.Fragment>
   );

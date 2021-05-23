@@ -13,7 +13,7 @@ export const NavbarContainer = styled.div`
   font-size: 1.2rem;
   margin-top: -35px;
   position: relative;
-  z-index: 2;
+  z-index: 99;
   .logo-navbar {
     padding: 4px;
   }
@@ -178,5 +178,21 @@ export const Button = styled.a`
   }
   @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const BackgroundMobile = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: ${({ isOpenMobileMenu }) => (isOpenMobileMenu ? "block" : "none")};
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 125px;
+    left: 0;
+    transition: opacity 0.25s;
+    background: #0b0b0b;
+    opacity: 0.6;
+    z-index: 2;
   }
 `;
