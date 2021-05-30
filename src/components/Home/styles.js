@@ -46,7 +46,6 @@ export const SwiperDescription = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: Montserrat, sans-serif;
   z-index: 19;
   @media screen and (max-width: 768px) {
     top: 0;

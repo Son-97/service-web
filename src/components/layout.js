@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
     padding-left: 30px;
   }
   @media screen and (max-width: 540px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 `;
 
@@ -75,6 +75,7 @@ export const Title = styled.h2`
   }
   @media screen and (max-width: 540px) {
     font-size: 26px;
+    line-height: 50px;
   }
 `;
 

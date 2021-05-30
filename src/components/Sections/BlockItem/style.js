@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-export const BlockItemStyle = styled.div`
+export const BlockItemStyle = styled(Link)`
   border: 1px solid #cccccc;
   padding: 20px;
   margin: 57px 15px;

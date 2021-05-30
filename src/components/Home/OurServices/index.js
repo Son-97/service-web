@@ -6,6 +6,7 @@ import TitleSection from "../../Sections/TitleSection";
 import { GiClockwork } from "react-icons/gi";
 import BlockItem from "../../Sections/BlockItem/BlockItem";
 import serviceImg from "../../../images/service_img.jpg";
+import { services } from "../../../data";
 
 const index = () => {
   return (
@@ -20,54 +21,17 @@ const index = () => {
         />
 
         <Content className="w-full flex justify-between flex-wrap">
-          <BlockItem
-            title="Fast pest removal"
-            description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                            auctor aliquet. Aenean lorem quis bibendum lorem quis."
-            bg={serviceImg}
-          >
-            <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
-          </BlockItem>
-          <BlockItem
-            title="Fast pest removal"
-            description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                            auctor aliquet. Aenean lorem quis bibendum lorem quis."
-            bg={serviceImg}
-          >
-            <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
-          </BlockItem>
-          <BlockItem
-            title="Fast pest removal"
-            description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                            auctor aliquet. Aenean lorem quis bibendum lorem quis."
-            bg={serviceImg}
-          >
-            <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
-          </BlockItem>
-          <BlockItem
-            title="Fast pest removal"
-            description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                            auctor aliquet. Aenean lorem quis bibendum lorem quis."
-            bg={serviceImg}
-          >
-            <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
-          </BlockItem>
-          <BlockItem
-            title="Fast pest removal"
-            description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                            auctor aliquet. Aenean lorem quis bibendum lorem quis."
-            bg={serviceImg}
-          >
-            <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
-          </BlockItem>
-          <BlockItem
-            title="Fast pest removal"
-            description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
-                            auctor aliquet. Aenean lorem quis bibendum lorem quis."
-            bg={serviceImg}
-          >
-            <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
-          </BlockItem>
+          {services.map((service, idx) => (
+            <BlockItem
+              slug={service.slug}
+              key={idx}
+              title={service.title}
+              description={service.description}
+              bg={serviceImg}
+            >
+              <GiClockwork size={30} className="text-yellow-1 z-1 icon" />
+            </BlockItem>
+          ))}
         </Content>
       </Wrapper>
     </Container>

@@ -12,8 +12,8 @@ const ContactFooter = () => {
         className="row"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.facebook.com/dichvudietmoiQuangDuong"
-        title="https://www.facebook.com/dichvudietmoiQuangDuong"
+        href="https://www.facebook.com/diettmoitangoc"
+        title="https://www.facebook.com/diettmoitangoc"
       >
         <Icon className="contact-icon">
           <FaFacebookF size="23" />

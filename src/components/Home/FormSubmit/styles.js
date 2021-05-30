@@ -42,7 +42,11 @@ export const ButtonSubmit = styled.button`
   width: 175px;
   overflow: hidden;
   background: #ddbb00;
+  border-radius: 40px;
   transition: all 0.5s ease;
+  &:focus {
+    outline: none;
+  }
   .btn-front {
     position: absolute;
     left: 0;

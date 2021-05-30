@@ -5,6 +5,7 @@ import { Container, Wrapper } from "../layout";
 import { Content, Line } from "./style";
 import ContactFooter from "./ContactFooter";
 import FooterWrapper from "./FooterWrapper";
+import { scrollToTop } from "../ButtonScrollOnTop";
 
 const Footer = () => {
   return (
@@ -18,12 +19,12 @@ const Footer = () => {
           </Content>
         </Wrapper>
         <div className="bg-black-4 text-gray-1 p-4">
-          Copyright 2018{" "}
-          <Link to="/" className="text-yellow-1">
-            Dietmoi.com
+          Copyright 2021{" "}
+          <Link to="/" className="text-yellow-1" onClick={scrollToTop}>
+            Dietmoitangoc.com
           </Link>{" "}
           . All Right Reserved - Design By{" "}
-          <span className="text-yellow-1">DietMoiQuangDuong</span>
+          <span className="text-yellow-1">Dietmoitangoc</span>
         </div>
       </Container>
     </React.Fragment>

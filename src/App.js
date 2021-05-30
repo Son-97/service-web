@@ -8,6 +8,7 @@ import Services from "./pages/Service";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import ServiceDetail from "./pages/ServiceDetail";
+import NotFound from "./pages/404";
 
 function App() {
   return (
@@ -15,11 +16,13 @@ function App() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/service" exact component={Services} />
-        <Route path="/service/detail" exact component={ServiceDetail} />
-        <Route path="/products" exact component={Blog} />
-        <Route path="/blog" exact component={Blog} />
-        <Route path="/contact-us" exact component={Contact} />
+        <Route path="/dich-vu" exact component={Services} />
+        <Route path="/dich-vu/:slug" exact component={ServiceDetail} />
+        <Route path="/san-pham" exact component={Blog} />
+        <Route path="/san-pham/:slug" exact component={Blog} />
+        <Route path="/tin-tuc" exact component={Blog} />
+        <Route path="/lien-he" exact component={Contact} />
+        <Route component={NotFound} />
       </Switch>
       <Footer />
       <ButtonScrollOnTop />

@@ -39,7 +39,6 @@ export const MenuContainer = styled.div`
         padding: 0 40px;
         a {
           position: relative;
-          display: block;
           color: #061a3a;
           font-size: 18px;
           line-height: 30px;
@@ -52,6 +51,12 @@ export const MenuContainer = styled.div`
           transition: all 500ms ease;
           padding: 12px 0;
           border-bottom: 1px solid #e5e5e5;
+          &.active {
+            .icon-active {
+              display: block;
+              color: #ddbb00;
+            }
+          }
         }
         &:hover {
           background: #ddbb00;

@@ -1,59 +1,68 @@
-import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as IoIcons from "react-icons/io";
-import * as RiIcons from "react-icons/ri";
-
 export const SidebarData = [
   {
     title: "Trang chủ",
     path: "/",
-    icon: <IoIcons.IoMdHelpCircle />,
   },
   {
     title: "Về chúng tôi",
-    path: "/about-us",
-    icon: <IoIcons.IoMdHelpCircle />,
+    path: "/ve-chung-toi",
   },
   {
     title: "Dịch vụ",
-    path: "/service",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+    path: "/dich-vu",
 
     subNav: [
       {
-        title: "Service 1",
-        path: "/service/detail",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
+        title: "Diệt mối tận gốc",
+        path: "/dich-vu/diet-moi-tan-goc",
       },
       {
-        title: "Service 2",
-        path: "/service/services2",
-        icon: <IoIcons.IoIosPaper />,
-        cName: "sub-nav",
+        title: "Chống mối nền móng",
+        path: "/dich-vu/chong-moi-nen-mong",
       },
       {
-        title: "Service 3",
-        path: "/service/services3",
-        icon: <IoIcons.IoIosPaper />,
+        title: "Dịch vụ phòng mối",
+        path: "/dich-vu/dich-vu-phong-moi",
+      },
+      {
+        title: "Khử khuẩn phòng dịch",
+        path: "/dich-vu/khu-khuan-phong-dich",
+      },
+      {
+        title: "Kiểm soát côn trùng",
+        path: "/dich-vu/kiem-soat-con-trung",
+      },
+      {
+        title: "Dịch vụ diệt chuột",
+        path: "/dich-vu/dich-vu-diet-chuot",
       },
     ],
   },
   {
     title: "Sản phẩm",
-    path: "/products",
-    icon: <FaIcons.FaPhone />,
+    path: "/san-pham",
+
+    subNav: [
+      {
+        title: "Sản phẩm 1",
+        path: "/san-pham/1",
+      },
+      {
+        title: "Sản phẩm 2",
+        path: "/san-pham/2",
+      },
+      {
+        title: "Sản phẩm 3",
+        path: "/san-pham/2",
+      },
+    ],
   },
   {
     title: "Tin tức",
-    path: "/blog",
-    icon: <FaIcons.FaPhone />,
+    path: "/tin-tuc",
   },
   {
     title: "Liên hệ",
-    path: "/contact-us",
-    icon: <IoIcons.IoMdHelpCircle />,
+    path: "/lien-he",
   },
 ];

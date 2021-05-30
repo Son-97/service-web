@@ -13,7 +13,7 @@ export const Container = styled.div`
     top: 19px;
     left: 50%;
     transform: translate(-50%, 0);
-    max-width: 1045px;
+    max-width: 1050px;
   }
   @media screen and (max-width: 768px) {
     .bg-yellow {

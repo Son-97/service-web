@@ -71,7 +71,7 @@ export const Content = styled.div`
           text-transform: capitalize;
         }
         .description {
-          margin-top: 15px;
+          margin-top: 10px;
           text-align: left;
           font-size: 16px;
           color: #707070;

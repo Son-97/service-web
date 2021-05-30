@@ -1,23 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+
 import {
   NavbarContainer,
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
   BackgroundMobile,
 } from "./Navbar.elements";
 import Logo from "../../../images/logo_dark.png";
+import { SidebarData } from "./NavbarData";
+import SubNavbar from "./SubNavbar";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 function Navbar() {
+  const { width } = useWindowDimensions();
+
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
   const handleToggleMenu = () => setIsOpenMobileMenu(!isOpenMobileMenu);
+
   const closeMobileMenu = () => setIsOpenMobileMenu(false);
 
+  useEffect(() => {
+    if (isOpenMobileMenu && width <= 768) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isOpenMobileMenu, width]);
+
   document.body.addEventListener("click", () => {
-    closeMobileMenu();
+    if (width <= 768) {
+      closeMobileMenu();
+    }
   });
 
   return (
@@ -26,67 +42,15 @@ function Navbar() {
         <MobileIcon onClick={handleToggleMenu}>
           {isOpenMobileMenu ? <FaTimes /> : <FaBars />}
         </MobileIcon>
-        <NavMenu onClick={handleToggleMenu} click={isOpenMobileMenu}>
+        <NavMenu onClick={handleToggleMenu} isOpenMobileMenu={isOpenMobileMenu}>
           <NavItem>
             <div className="bg-yellow-1 justify-center py-1 hidden logo-mobile">
               <img src={Logo} alt="logo" />
             </div>
           </NavItem>
-          <NavItem>
-            <NavLinks
-              exact
-              to="/"
-              onClick={closeMobileMenu}
-              activeClassName="active"
-            >
-              Trang chủ
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="/about-us"
-              onClick={closeMobileMenu}
-              activeClassName="active"
-            >
-              Về chúng tôi
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="/service"
-              onClick={closeMobileMenu}
-              activeClassName="active"
-            >
-              Dịch vụ
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="/products"
-              onClick={closeMobileMenu}
-              activeClassName="active"
-            >
-              Sản phẩm
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="/blog"
-              onClick={closeMobileMenu}
-              activeClassName="active"
-            >
-              Tin tức
-            </NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks
-              to="/contact-us"
-              onClick={closeMobileMenu}
-              activeClassName="active"
-            >
-              Liên hệ
-            </NavLinks>
-          </NavItem>
+          {SidebarData.map((sidebar, idx) => (
+            <SubNavbar sidebar={sidebar} key={idx} />
+          ))}
         </NavMenu>
 
         <div className="logo-navbar hidden">

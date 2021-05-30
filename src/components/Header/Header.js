@@ -12,7 +12,7 @@ import { Icon } from "../ui/Icon";
 const HeaderInfo = () => {
   return (
     <Container>
-      <div className="bg-yellow-1 w-1 bg-yellow" />
+      <div className="bg-yellow-1 w-4/12 bg-yellow" />
       <div className="absolute flex items-center justify-center w-full justify-between top-header">
         <Link to="/" className="logo">
           <img src={Logo} alt="logo" />
@@ -43,8 +43,8 @@ const HeaderInfo = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/dichvudietmoiQuangDuong"
-            title="https://www.facebook.com/dichvudietmoiQuangDuong"
+            href="https://www.facebook.com/diettmoitangoc"
+            title="https://www.facebook.com/diettmoitangoc"
           >
             <Icon className="contact-icon">
               <FaFacebookF size="23" />

@@ -3,6 +3,9 @@ import { FaMagento } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
+  position: sticky;
+  top: -1px;
+  /* position: relative; */
   width: 100%;
   max-width: 1050px;
   margin: 0 auto;
@@ -12,8 +15,8 @@ export const NavbarContainer = styled.div`
   align-items: center;
   font-size: 1.2rem;
   margin-top: -35px;
-  position: relative;
   z-index: 99;
+  box-shadow: 0px 1px 4px #888888;
   .logo-navbar {
     padding: 4px;
   }
@@ -76,10 +79,11 @@ export const NavMenu = styled.ul`
     flex-direction: column;
     width: 300px;
     position: absolute;
-    height: 90vh;
+    height: 100vh;
+    overflow-y: auto;
     z-index: 9999;
     top: 0px;
-    left: ${({ click }) => (click ? 0 : "-100%")};
+    left: ${({ isOpenMobileMenu }) => (isOpenMobileMenu ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
     background: #fff;
@@ -88,24 +92,50 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 10px;
+  position: relative;
+  .icon {
+    display: none;
+  }
+
+  &:hover .nav-dropdown {
+    display: block;
+    left: 0;
+    transform: translate(0%, 5px);
+  }
 
   @media screen and (max-width: 768px) {
+    display: flex;
     width: 100%;
     border-bottom: 1px solid #ddbb00;
     padding: 0px;
+    margin-right: 0;
+
     &:hover {
-      border: none;
       background-color: #ddbb00;
       transition: all 0.5s;
       a {
         color: #fff;
       }
+      .nav-dropdown {
+        display: none;
+      }
     }
     & .logo-mobile {
       display: flex;
     }
+    & .icon {
+      display: block;
+      margin-right: 22px;
+    }
+    &:first-child {
+      display: block;
+    }
+  }
+  &:last-child {
+    margin-right: 0;
   }
 `;
 
@@ -126,7 +156,6 @@ export const NavLinks = styled(NavLink)`
   color: #202020;
   text-transform: capitalize;
   padding: 10px 15px;
-  margin-right: 10px;
   font-weight: 500;
   position: relative;
   &.active {
@@ -144,8 +173,8 @@ export const NavLinks = styled(NavLink)`
     text-align: center;
     padding: 16px 22px;
     width: 100%;
-    display: table;
-
+    margin-right: 0;
+    text-align: left;
     &:hover {
       color: #4b59f7;
       transition: all 0.3s ease;
@@ -194,5 +223,58 @@ export const BackgroundMobile = styled.div`
     background: #0b0b0b;
     opacity: 0.6;
     z-index: 2;
+  }
+`;
+
+export const DropdownLink = styled(NavLink)`
+  background: #252831;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 16px;
+  &:hover {
+    background: green;
+    cursor: pointer;
+  }
+  &.active-sub {
+    color: #34d734;
+  }
+`;
+
+export const SidebarLabel = styled.span`
+  margin-left: 16px;
+`;
+
+export const SubnavWrapperMobile = styled.div`
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const NavDropdownDesktop = styled.div`
+  background-color: #f3f3f3;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  border-top: 3px solid #f58634;
+  position: absolute;
+  min-width: 220px;
+  text-align: left;
+  transition: opacity 0.25s;
+  display: none;
+  & li {
+    color: #1a80b6;
+    letter-spacing: 0;
+    border-right: 0;
+    padding: 8px 20px;
+    &:hover {
+      color: #f58634;
+    }
   }
 `;

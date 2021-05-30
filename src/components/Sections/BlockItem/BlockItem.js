@@ -3,10 +3,11 @@ import React from "react";
 import { SupText } from "../../layout";
 import { BlockItemStyle } from "./style";
 
-const BlockItem = ({ title, description, children, bg }) => {
+const BlockItem = ({ title, description, children, bg, slug }) => {
   return (
     <BlockItemStyle
       className="block-item"
+      to={`dich-vu/${slug}`}
       style={
         bg
           ? {

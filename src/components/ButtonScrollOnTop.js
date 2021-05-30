@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { FaAngleDoubleUp } from "react-icons/fa";
 
-const ButtonScrollOnTop = styled(({ className }) => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+export const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
+const ButtonScrollOnTop = styled(({ className }) => {
   return (
     <div className={className} onClick={scrollToTop}>
       <FaAngleDoubleUp className="icon-double-up" />

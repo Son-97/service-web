@@ -33,7 +33,7 @@ const Home = () => {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    // autoplay: { delay: 3000 },
+    autoplay: { delay: 3000 },
   };
 
   return (
@@ -43,7 +43,7 @@ const Home = () => {
           {data.map((item, index) => (
             <div className="w-full h-full relative" key={index}>
               <div className="absolute w-full h-full bg-black-2"></div>
-              <img src={item} alt="bg" className="backgound-img" />
+              <img src={item} alt="bg" className="backgound-img w-full" />
               <SwiperDescription>
                 <p className="text pb-4">Dịch vụ diệt mối tận gốc</p>
                 <p className="description text-red-600 text-2xl leading-loose">
