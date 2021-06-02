@@ -1,5 +1,6 @@
 import React from "react";
 import { GiClockwork } from "react-icons/gi";
+import { BsQuestionDiamond } from "react-icons/bs";
 
 import { Container, Wrapper, SupText } from "../../layout";
 import { Content } from "./style";
@@ -23,7 +24,9 @@ const index = () => {
               <img src={whoWeImage} alt="who_we_image" />
             </div>
             <div className="txt_wrapper">
-              <h2>Chúng tôi là ai</h2>
+              <h2 className="flex items-center ">
+                Chúng tôi là ai <BsQuestionDiamond className="ml-2" size={25} />
+              </h2>
               <SupText className="text-left">
                 Proin gravida nibh vel velit auctor aliquet. ean sollicitudin,
                 lorem quis bibendu ipsum, nec sagittis sem nibh Duis sed odio
@@ -37,7 +40,7 @@ const index = () => {
           <div className="right">
             <div className="w-full flex justify-between flex-wrap">
               <BlockItem
-                title="Fast pest removal"
+                title=""
                 description="This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
                             auctor aliquet. Aenean lorem quis bibendum lorem quis."
               >

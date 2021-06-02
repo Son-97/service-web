@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
 import { Container, Wrapper } from "../../layout";
-import counter_bg from "../../../images/counter_bg.jpg";
+import counter_bg from "../../../images/testimonial_bg.jpg";
 import { Content } from "./style";
 
 let data = [

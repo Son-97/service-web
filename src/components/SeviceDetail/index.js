@@ -38,7 +38,7 @@ const ServiceDetailePage = () => {
           <div className="flex detail-container">
             <MenuContainer>
               <div className="sidebar">
-                <div className="title">Dịch vụ của chúng tôi</div>
+                <div className="title">Danh mục dịch vụ</div>
                 <div className="list">
                   {services.map((item, idx) => (
                     <div className="list-item" key={idx}>

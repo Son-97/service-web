@@ -12587,6 +12587,10 @@ video {
   padding: 5.75rem;
 }
 
+.p-32 {
+  padding: 8rem;
+}
+
 .p-1\/2 {
   padding: 0.125rem;
 }
@@ -12733,6 +12737,16 @@ video {
 .px-23 {
   padding-left: 5.75rem;
   padding-right: 5.75rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .py-1\/2 {
@@ -12977,6 +12991,22 @@ video {
 
 .pl-23 {
   padding-left: 5.75rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pr-32 {
+  padding-right: 8rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pl-32 {
+  padding-left: 8rem;
 }
 
 .pt-1\/2 {
@@ -31323,6 +31353,10 @@ video {
     padding: 5.75rem;
   }
 
+  .sm\:p-32 {
+    padding: 8rem;
+  }
+
   .sm\:p-1\/2 {
     padding: 0.125rem;
   }
@@ -31469,6 +31503,16 @@ video {
   .sm\:px-23 {
     padding-left: 5.75rem;
     padding-right: 5.75rem;
+  }
+
+  .sm\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .sm\:py-1\/2 {
@@ -31713,6 +31757,22 @@ video {
 
   .sm\:pl-23 {
     padding-left: 5.75rem;
+  }
+
+  .sm\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .sm\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .sm\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .sm\:pl-32 {
+    padding-left: 8rem;
   }
 
   .sm\:pt-1\/2 {
@@ -50029,6 +50089,10 @@ video {
     padding: 5.75rem;
   }
 
+  .md\:p-32 {
+    padding: 8rem;
+  }
+
   .md\:p-1\/2 {
     padding: 0.125rem;
   }
@@ -50175,6 +50239,16 @@ video {
   .md\:px-23 {
     padding-left: 5.75rem;
     padding-right: 5.75rem;
+  }
+
+  .md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .md\:py-1\/2 {
@@ -50419,6 +50493,22 @@ video {
 
   .md\:pl-23 {
     padding-left: 5.75rem;
+  }
+
+  .md\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .md\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .md\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .md\:pl-32 {
+    padding-left: 8rem;
   }
 
   .md\:pt-1\/2 {
@@ -68735,6 +68825,10 @@ video {
     padding: 5.75rem;
   }
 
+  .mdx\:p-32 {
+    padding: 8rem;
+  }
+
   .mdx\:p-1\/2 {
     padding: 0.125rem;
   }
@@ -68881,6 +68975,16 @@ video {
   .mdx\:px-23 {
     padding-left: 5.75rem;
     padding-right: 5.75rem;
+  }
+
+  .mdx\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .mdx\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .mdx\:py-1\/2 {
@@ -69125,6 +69229,22 @@ video {
 
   .mdx\:pl-23 {
     padding-left: 5.75rem;
+  }
+
+  .mdx\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .mdx\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .mdx\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .mdx\:pl-32 {
+    padding-left: 8rem;
   }
 
   .mdx\:pt-1\/2 {
@@ -87441,6 +87561,10 @@ video {
     padding: 5.75rem;
   }
 
+  .lg\:p-32 {
+    padding: 8rem;
+  }
+
   .lg\:p-1\/2 {
     padding: 0.125rem;
   }
@@ -87587,6 +87711,16 @@ video {
   .lg\:px-23 {
     padding-left: 5.75rem;
     padding-right: 5.75rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .lg\:py-1\/2 {
@@ -87831,6 +87965,22 @@ video {
 
   .lg\:pl-23 {
     padding-left: 5.75rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .lg\:pl-32 {
+    padding-left: 8rem;
   }
 
   .lg\:pt-1\/2 {
@@ -106147,6 +106297,10 @@ video {
     padding: 5.75rem;
   }
 
+  .xl\:p-32 {
+    padding: 8rem;
+  }
+
   .xl\:p-1\/2 {
     padding: 0.125rem;
   }
@@ -106293,6 +106447,16 @@ video {
   .xl\:px-23 {
     padding-left: 5.75rem;
     padding-right: 5.75rem;
+  }
+
+  .xl\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .xl\:py-1\/2 {
@@ -106537,6 +106701,22 @@ video {
 
   .xl\:pl-23 {
     padding-left: 5.75rem;
+  }
+
+  .xl\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .xl\:pr-32 {
+    padding-right: 8rem;
+  }
+
+  .xl\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .xl\:pl-32 {
+    padding-left: 8rem;
   }
 
   .xl\:pt-1\/2 {

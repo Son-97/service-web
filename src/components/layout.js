@@ -13,14 +13,14 @@ export const Wrapper = styled.div`
   padding-left: 15px;
   background-color: ${(props) =>
     props.isBackgroundWhite ? "white" : "transparent"};
-  padding-top: 80px;
+  padding-top: ${(props) => (props.pt ? props.pt : "80px")};
   padding-bottom: 80px;
   @media screen and (max-width: 1100px) {
     padding-right: 30px;
     padding-left: 30px;
   }
-  @media screen and (max-width: 540px) {
-    padding-top: 80px;
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 `;

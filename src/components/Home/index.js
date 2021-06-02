@@ -1,6 +1,8 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
+// import { MdPhoneInTalk } from "react-icons/md";
+import { GiTronArrow } from "react-icons/gi";
 
 import bg from "../../images/slider_bg.jpg";
 import bg1 from "../../images/slide-1.jpg";
@@ -13,7 +15,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import AboutUs from "./AboutUs";
 import OurServices from "./OurServices";
 import CounterSection from "./CounterSection";
-import LatestProject from "./LatestProject";
+import LatestProject from "./Products";
 
 const data = [bg, bg1, bg2, bg3];
 
@@ -46,12 +48,13 @@ const Home = () => {
               <img src={item} alt="bg" className="backgound-img w-full" />
               <SwiperDescription>
                 <p className="text pb-4">Dịch vụ diệt mối tận gốc</p>
-                <p className="description text-red-600 text-2xl leading-loose">
-                  Chất lượng - Uy tín - Hiệu quả
+                <p className="description text-red-600 text-2xl leading-loose flex items-center">
+                  Chất lượng <GiTronArrow className="mx-2 text-yellow-600" /> Uy
+                  tín <GiTronArrow className="mx-2 text-yellow-600" /> Hiệu quả
                 </p>
-                <p className="description text-yellow-600 text-2xl font-black">
-                  Hotline: 0347366345
-                </p>
+                {/* <p className="description text-red-600 text-xl flex items-center mt-1">
+                  <MdPhoneInTalk size={30} className="mr-2" /> 0347366345
+                </p> */}
               </SwiperDescription>
             </div>
           ))}

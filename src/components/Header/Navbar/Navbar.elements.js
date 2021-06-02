@@ -3,9 +3,9 @@ import { FaMagento } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
 export const NavbarContainer = styled.div`
-  position: sticky;
-  top: -1px;
-  /* position: relative; */
+  /* position: sticky;
+  top: -1px; */
+  position: relative;
   width: 100%;
   max-width: 1050px;
   margin: 0 auto;

@@ -21,7 +21,7 @@ const FooterWrapper = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/dichvudietmoiQuangDuong"
+            href="https://www.facebook.com/diettmoitangoc"
           >
             <FaFacebookF
               size={15}
@@ -31,7 +31,7 @@ const FooterWrapper = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/dichvudietmoiQuangDuong"
+            href="https://www.facebook.com/diettmoitangoc"
           >
             <FaYoutube
               size={15}
@@ -41,7 +41,7 @@ const FooterWrapper = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/dichvudietmoiQuangDuong"
+            href="https://www.facebook.com/diettmoitangoc"
           >
             <FaInstagram
               size={15}

@@ -22,7 +22,7 @@ function index() {
           style={{ background: "rgba(0, 0, 0, 0.8)" }}
         />
         <Wrapper>
-          <TitleSection title="Service" className="p-0" colorWhite />
+          <TitleSection title="Dịch vụ" className="p-0" colorWhite />
         </Wrapper>
       </Container>
 

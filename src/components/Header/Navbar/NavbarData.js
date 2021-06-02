@@ -40,20 +40,24 @@ export const SidebarData = [
   },
   {
     title: "Sản phẩm",
-    path: "/san-pham",
+    path: "/san-pham/diet-moi",
 
     subNav: [
       {
-        title: "Sản phẩm 1",
-        path: "/san-pham/1",
+        title: "Thuốc diệt mối",
+        path: "/san-pham/diet-moi",
       },
       {
-        title: "Sản phẩm 2",
-        path: "/san-pham/2",
+        title: "Thuốc diệt chuột",
+        path: "/san-pham/diet-chuot",
       },
       {
-        title: "Sản phẩm 3",
-        path: "/san-pham/2",
+        title: "Thuốc diệt côn trùng",
+        path: "/san-pham/diet-con-trung",
+      },
+      {
+        title: "Thuốc diệt khuẩn",
+        path: "/san-pham/diet-khuan",
       },
     ],
   },
